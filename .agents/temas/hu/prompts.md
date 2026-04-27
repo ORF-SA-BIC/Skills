@@ -62,7 +62,17 @@ Consulta la base de datos y encuentra:
 - columnas relevantes
 - posibles relaciones
 
-Usa MCP para obtener información real.
+**Orden de prioridad de fuentes:**
+
+1. **MCP de BD activo** (`mcp__sqlserver`, `mcp__postgres`, etc.) — usar siempre que esté disponible.
+2. **Backup** (`.bak`, `.sql`, `.dump` en el repo) — usar SOLO si no hay MCP.
+3. **Ninguna fuente** — reportar error y continuar el workflow sin evidencia de BD.
+
+**Reglas:**
+- Si hay MCP, NO usar backup aunque exista.
+- Reportar siempre `source` (`mcp` / `backup` / `none`) y `mcp_available` (true/false) en el output.
+- Si se usa backup, incluir advertencia de posible desactualización.
+- Si no hay MCP, reportarlo explícitamente aunque se haya usado backup como fallback.
 
 ---
 

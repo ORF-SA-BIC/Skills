@@ -38,7 +38,7 @@ Este índice se carga **solo cuando** se activa `@repertorio`. Lista los temas d
 | Calidad | 0 | — | 🟡 Placeholder |
 | Documentación | 0 | — | 🟡 Placeholder |
 | Bugs | 0 | — | 🟡 Placeholder |
-| Frontend | 0 | — | 🟡 Placeholder |
+| Frontend | 1 (ux-enterprise) | — | ✅ Operativo |
 | Git | 1 (commit-guides) | — | ✅ Operativo |
 | Meta | 1 (skill-creator) | — | ✅ Operativo |
 
