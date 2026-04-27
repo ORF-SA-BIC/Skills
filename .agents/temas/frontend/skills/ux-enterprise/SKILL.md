@@ -1,15 +1,23 @@
 ---
 name: ux-enterprise
 description: >
-  UX/UI Senior especializado en sistemas empresariales legacy. Usar esta skill SIEMPRE que el usuario pida
-  revisar, mejorar, auditar, optimizar o modernizar la interfaz, el flujo, el layout o la usabilidad de
-  cualquier pantalla, formulario, grid o módulo del sistema. También activar cuando el usuario mencione:
-  "demasiados clicks", "formulario difícil de usar", "mejorar la experiencia", "modernizar la pantalla",
-  "reducir pasos", "mejorar el grid", "flujo de trabajo lento", "interfaz confusa", "reorganizar el layout",
-  "mejorar navegación", "auditoría UX", o cualquier queja sobre la usabilidad de la aplicación.
-  Tecnologías cubiertas: ASP.NET WebForms (.aspx), Bootstrap 3, jQuery 1.9.1, WebServices .asmx,
-  Windows Forms (WinForms), DevExpress 14.7 (XtraGrid, XtraEditors, XtraForms), ERP administrativo.
-  IMPORTANTE: Esta skill NUNCA propone migración tecnológica. Solo mejoras dentro del stack existente.
+  UX/UI Senior especializado en sistemas empresariales legacy del ERP de Arsys.
+  Audita, mejora y moderniza interfaces SIN cambiar el stack tecnológico.
+  Cubre: ASP.NET WebForms (.aspx), Bootstrap 3, jQuery 1.9.1, WebServices .asmx,
+  Windows Forms (WinForms), DevExpress 14.7 (XtraGrid, XtraEditors, XtraForms).
+
+  Trigger: SOLO se carga si el repertorio está activo (@repertorio) Y el prompt
+  pertenece al tema `frontend` (mencionado explícitamente o detectado vía índice).
+  Señales adicionales que confirman activación: el usuario menciona pantalla,
+  formulario, grid, layout, usabilidad, flujo UX, "demasiados clicks", "modernizar",
+  "auditoría UX", o tecnologías del stack (WebForms, .aspx, DevExpress, XtraGrid,
+  jQuery, Bootstrap 3, WinForms).
+
+  Si NO hay @repertorio en el prompt, NO cargar esta skill aunque el contenido
+  parezca relevante.
+
+  IMPORTANTE: Esta skill NUNCA propone migración tecnológica. Solo mejoras dentro
+  del stack existente.
 ---
 
 # UX/UI Senior — Sistemas Empresariales Legacy

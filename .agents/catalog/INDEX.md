@@ -12,7 +12,7 @@ Este índice se carga **solo cuando** se activa `@repertorio`. Lista los temas d
 | **Calidad** | "calidad", "estándares Arsys", "code review", "buenas prácticas", "convenciones" | Por definir | `temas/calidad/` |
 | **Documentación** | "README", "ADR", "changelog", "documenta", "manual" | Por definir | `temas/documentacion/` |
 | **Bugs** | "bug", "error", "fallo", "no funciona", "rompió", "incidente" | Por definir | `temas/bugs/` |
-| **Frontend** | "componente", "UI", "vista", "estilo", "responsive", "accesibilidad" | Por definir | `temas/frontend/` |
+| **Frontend** | "componente", "UI", "vista", "estilo", "responsive", "accesibilidad", "pantalla", "formulario", "grid", "layout", "WebForms", ".aspx", "DevExpress", "XtraGrid", "WinForms", "auditoría UX", "modernizar pantalla" | Por definir | `temas/frontend/` |
 | **Git** | "commit", "rama", "merge", "release", "git" | No | `temas/git/` |
 | **Meta** | "nueva skill", "crear skill", "agregar tema" | No | `temas/meta/` |
 
