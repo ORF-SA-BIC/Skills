@@ -2,7 +2,25 @@
   "permissions": {
     "allow": [
       "mcp__filesystem__directory_tree",
-      "mcp__filesystem__read_multiple_files"
+      "mcp__filesystem__read_multiple_files",
+      "mcp__filesystem__create_directory",
+      "mcp__filesystem__move_file",
+      "mcp__filesystem__list_directory",
+      "Bash([ -f \"$d/skill.md\" ])",
+      "Bash(mv __TRACKED_VAR__/skill.md __TRACKED_VAR__/skill.md.tmp)",
+      "Bash(mv __TRACKED_VAR__/skill.md.tmp __TRACKED_VAR__/SKILL.md)",
+      "Bash(rm skills/router.json)",
+      "Bash(rmdir workflows/qa-full workflows skills prompts router/rules)",
+      "Bash(node test-router.js)",
+      "Bash(rm -rf router/ shared/)",
+      "Bash(rm -f catalog/themes.json catalog/catalog.json)",
+      "Bash(mkdir -p temas/hu/config temas/hu/examples)",
+      "Bash(mv config/rules.md config/standards.md config/mappings.md temas/hu/config/)",
+      "Bash(mv config/estructura.md config/estructura.json temas/hu/examples/)",
+      "Bash(rmdir config:*)",
+      "Bash(gh pr create --base main --title 'refactor\\(agents\\): reorganizar repertorio por temas con activador @repertorio' --body ':*)",
+      "Bash(command -v gh.exe)",
+      "Read(//c/Program Files/**)"
     ]
   }
 }
