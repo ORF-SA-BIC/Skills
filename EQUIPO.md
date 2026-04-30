@@ -51,14 +51,19 @@ git checkout -b {TU_NOMBRE} origin/{TU_NOMBRE}
 
 ---
 
-## 5. Antes de pushear — sincronizar con main
+## 5. Antes de pushear — descargar los cambios de main a tu rama
 
-**Siempre** hacer este paso antes de subir cambios.
+**Siempre** hacer este paso antes de subir cambios. Trae lo último de `main` hacia tu rama (NO sube nada de tu rama a main).
 
 ```bash
+# Descarga lo último de main desde GitHub a tu copia local
 git fetch origin main
+
+# Aplica esos cambios dentro de tu rama actual
 git merge origin/main
 ```
+
+Tus cambios siguen en tu rama. Solo se actualizan los archivos que main modificó.
 
 ---
 
