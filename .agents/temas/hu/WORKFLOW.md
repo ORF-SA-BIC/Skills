@@ -18,79 +18,79 @@ description: Dynamic QA workflow for frontend, backend, or fullstack analysis.
 
 ---
 
-1. Execute hu-parser
+1. Execute EXE-ENR-ParsearHU_v1_0
    - Input: HU
 
-2. Execute semantic-analyzer
-   - Input: hu-parser output
+2. Execute EXE-ENR-ExtraerKeywordsHU_v1_0
+   - Input: EXE-ENR-ParsearHU_v1_0 output
 
 ---
 
-3. Execute code-analyzer
-   - Input: semantic-analyzer output
+3. Execute SYS-QRY-AnalizarCodigo_v1_0
+   - Input: EXE-ENR-ExtraerKeywordsHU_v1_0 output
 
-4. Execute db-analyzer (ONLY if backend or fullstack)
-   - Input: semantic-analyzer output
+4. Execute ERP-QRY-AnalizarBD_v1_0 (ONLY if backend or fullstack)
+   - Input: EXE-ENR-ExtraerKeywordsHU_v1_0 output
 
 ---
 
-5. Execute traceability (ONLY if fullstack)
+5. Execute EXE-ENR-MapearTrazabilidad_v1_0 (ONLY if fullstack)
    - Input:
-     - hu-parser output
-     - code-analyzer output
-     - db-analyzer output
+     - EXE-ENR-ParsearHU_v1_0 output
+     - SYS-QRY-AnalizarCodigo_v1_0 output
+     - ERP-QRY-AnalizarBD_v1_0 output
 
 ---
 
-6. Execute rules-engine
+6. Execute EXE-VAL-EvaluarReglas_v1_0
    - Input:
-     - hu-parser output
-     - code-analyzer output
-     - db-analyzer output (if exists)
-     - traceability output (if exists)
+     - EXE-ENR-ParsearHU_v1_0 output
+     - SYS-QRY-AnalizarCodigo_v1_0 output
+     - ERP-QRY-AnalizarBD_v1_0 output (if exists)
+     - EXE-ENR-MapearTrazabilidad_v1_0 output (if exists)
 
 ---
 
-7. Execute qa-validator
+7. Execute EXE-VAL-DictaminarHU_v1_0
    - Input:
-     - hu-parser output
-     - code-analyzer output
-     - db-analyzer output (if exists)
-     - rules-engine output
+     - EXE-ENR-ParsearHU_v1_0 output
+     - SYS-QRY-AnalizarCodigo_v1_0 output
+     - ERP-QRY-AnalizarBD_v1_0 output (if exists)
+     - EXE-VAL-EvaluarReglas_v1_0 output
 
 ---
 
-8. Execute coverage-analyzer
+8. Execute EXE-VAL-MedirCobertura_v1_0
    - Input:
-     - hu-parser output
-     - code-analyzer output
-     - db-analyzer output (if exists)
-     - traceability output (if exists)
-     - rules-engine output
-     - qa-validator output
+     - EXE-ENR-ParsearHU_v1_0 output
+     - SYS-QRY-AnalizarCodigo_v1_0 output
+     - ERP-QRY-AnalizarBD_v1_0 output (if exists)
+     - EXE-ENR-MapearTrazabilidad_v1_0 output (if exists)
+     - EXE-VAL-EvaluarReglas_v1_0 output
+     - EXE-VAL-DictaminarHU_v1_0 output
 
 ---
 
-9. Execute suggestion-engine
+9. Execute EXE-ENR-GenerarSugerencias_v1_0
    - Input:
-     - qa-validator output
-     - rules-engine output
-     - coverage-analyzer output
+     - EXE-VAL-DictaminarHU_v1_0 output
+     - EXE-VAL-EvaluarReglas_v1_0 output
+     - EXE-VAL-MedirCobertura_v1_0 output
 
 ---
 
-10. Execute test-generator
+10. Execute EXE-ENR-GenerarPruebas_v1_0
     - Input:
-      - hu-parser output
-      - qa-validator output
-      - rules-engine output
+      - EXE-ENR-ParsearHU_v1_0 output
+      - EXE-VAL-DictaminarHU_v1_0 output
+      - EXE-VAL-EvaluarReglas_v1_0 output
 
 ---
 
-11. Execute result-builder
+11. Execute EXE-SUM-ConsolidarResultadoQA_v1_0
     - Input:
-      - qa-validator
-      - coverage-analyzer
-      - rules-engine
-      - suggestion-engine
-      - test-generator
+      - EXE-VAL-DictaminarHU_v1_0
+      - EXE-VAL-MedirCobertura_v1_0
+      - EXE-VAL-EvaluarReglas_v1_0
+      - EXE-ENR-GenerarSugerencias_v1_0
+      - EXE-ENR-GenerarPruebas_v1_0
