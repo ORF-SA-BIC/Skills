@@ -47,8 +47,8 @@ Los técnicos los conoce todo el equipo. Los de negocio tienen un dueño que los
 
 ### 2. Buscar el tema
 
-- Empezar por `catalog/INDEX.md` (temas técnicos).
-- Si no está, consultar `catalog/PERSONAS.md` y buscar en `personas/*/temas/`.
+- Empezar por `catalog/catalogo-temas.md` (temas técnicos).
+- Si no está, consultar `catalog/catalogo-personas.md` y buscar en `personas/*/temas/`.
 - Si hay **0 coincidencias** → "No encuentro el tema X. Técnicos disponibles: ... De negocio disponibles: ..."
 - Si hay **1 coincidencia** → entrar. Si es de negocio, mencionar al owner: "Tema 'nomina' (owner: Ferney)".
 - Si hay **N coincidencias** → preguntar al usuario cuál.
@@ -104,7 +104,7 @@ Preguntar al usuario:
 > "Activé el repertorio pero no detecto el tema o la persona. Opciones disponibles:
 > - **Temas técnicos:** HU, Calidad, Documentación, Bugs, Frontend, Git, Meta
 > - **Personas registradas:** Deimar, Ferney, Oscar, Daniel, Reyving
-> - **Temas de negocio:** (ver `catalog/PERSONAS.md`)
+> - **Temas de negocio:** (ver `catalog/catalogo-personas.md`)
 >
 > ¿Qué quieres usar?"
 
@@ -137,8 +137,8 @@ Avisar al usuario:
 .agents/
 ├── REPERTORIO.md             ← Este archivo (activador)
 ├── catalog/
-│   ├── INDEX.md              ← Temas técnicos transversales
-│   └── PERSONAS.md           ← Personas registradas y temas de negocio
+│   ├── catalogo-temas.md     ← Temas técnicos transversales
+│   └── catalogo-personas.md  ← Personas registradas y temas de negocio
 ├── temas/                    ← Técnicos del equipo (sin owner individual)
 │   ├── hu/, calidad/, frontend/, git/, meta/, documentacion/, bugs/
 └── personas/                 ← Personas con sus temas de negocio

@@ -6,7 +6,7 @@ Operaciones de control de versiones siguiendo convenciones de Arsys.
 
 | Skill | Propósito |
 |---|---|
-| [commit-guides](skills/commit-guides/SKILL.md) | Crea commits conventional-commits en español |
+| [`SYS-CTX-ConventionalCommits_v1_0`](skills/SYS-CTX-ConventionalCommits_v1_0/SKILL.md) | Crea commits conventional-commits en español |
 
 ## Skills futuras (sugeridas)
 
