@@ -1,5 +1,5 @@
 ---
-name: version
+name: arsys-version-form
 description: >
   Versiona y documenta cambios sobre formularios ARSYS (WinForms .cs/.Designer.cs).
   Cada vez que se edita un formulario, esta skill obliga a actualizar la versión, la fecha y el
